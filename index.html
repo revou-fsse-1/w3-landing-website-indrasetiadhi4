@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="The Landing page of an online coffee shop"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Indra Setiadhi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCoffeeShop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <span id="logo">MyCoffeeShop</span>
+      <ul class="desktop">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <span class="mobile">
+        <img
+          src="https://user-images.githubusercontent.com/2970318/209647125-dc41103d-c545-4e2e-b89b-099fbfcde702.svg"
+          alt="Hamburger Icon"
+        />
+      </span>
+
+      <button class="login desktop">Login</button>
+    </nav>
+    <header>
+      <h1>MyCoffeeShop</h1>
+      <h4>Since 2023</h4>
+    </header>
+    <main class="categories">
+      <h2>Categories</h2>
+      <span> </span>
+      <section id="coffee-photos">
+        <div class="grid-container">
+          <div id="item-1">
+            <img src="/assets/coffee-beans.jpg" alt="Coffee beans" />
+          </div>
+          <div id="item-2">
+            <img src="/assets/coffee-machine.jpg" alt="Espresso machine" />
+          </div>
+          <div id="item-3">
+            <img src="/assets/coffee-grinder.jpg" alt="Coffee grinder" />
+          </div>
+          <div id="item-4">
+            <img src="/assets/coffee-others.jpg" alt="A cup of hot coffee" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="section-video">
+      <h2>Express yourself with espresso!</h2>
+      <div class="flex-container">
+        <iframe
+          width="680"
+          height="315"
+          src="https://www.youtube.com/embed/0s9WyDbRCI4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section id="form-section">
+      <h2>Fill this survey for promo code!</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Personal Data:</legend>
+          <div>
+            <label for="fullName">Full Name:</label>
+            <input id="fullName" type="text" required />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" required />
+          </div>
+
+          <div>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Additional information:</legend>
+          <div>
+            <p>What is your favourite coffee?</p>
+            <input id="latte" type="checkbox" name="coffee" value="latte" />
+            <label for="latte">Latte</label>
+            <input
+              id="coldbrew"
+              type="checkbox"
+              name="coffee"
+              value="coldbrew"
+            />
+            <label for="coldbrew">Cold Brew</label>
+            <input id="tubruk" type="checkbox" name="coffee" value="tubruk" />
+            <label for="tubruk">Tubruk</label>
+            <input id="dalgona" type="checkbox" name="coffee" value="dalgona" />
+            <label for="dalgona">Dalgona</label>
+          </div>
+          <div>
+            <p>Tell us why you love coffee!</p>
+            <textarea rows="3"></textarea>
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <p>Copyright &copy; 2023 Indra Setiadhi</p>
+    </footer>
+  </body>
+</html>
